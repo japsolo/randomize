@@ -57,7 +57,7 @@ btnP.addEventListener('click', random);
 
 const question = () => {
 	let n = Math.floor(Math.random() * questions.length);
-	document.querySelector('.question').innerText = 'Pregunta: ' + questions[n];
+	document.querySelector('.question').innerText = `Pregunta: ${questions[n]}`;
 	questions.splice(n, 1);
 	btnQ.style.display = 'none';
 	btnT.style.display = 'block';
@@ -69,7 +69,7 @@ const counter = () => {
 	const miliSecondsTxt = document.querySelector('.counter em');
 
 	document.querySelector('.overlay').style.display = 'flex';
-	let seconds = 3;
+	let seconds = 30;
 	let miliseconds = 99;
 	document.querySelector('.seconds').innerText = seconds;
 	miliSecondsTxt.innerText = miliseconds;
@@ -88,14 +88,14 @@ const counter = () => {
 	}, 1000);
 
 	const mili = setInterval( () => {
-		if (miliseconds < 0) {
+		if (miliseconds < 1) {
 			miliseconds = 99;
 			miliSecondsTxt.innerText = miliseconds;
-		} else if (miliseconds < 10) {
-			miliseconds -= 1;
-			miliSecondsTxt.innerText = '0' + miliseconds;
+		} else if (miliseconds < 11) {
+			--miliseconds;
+			miliSecondsTxt.innerText = `0${miliseconds}`;
 		} else {
-			miliseconds -= 1;
+			--miliseconds;
 			miliSecondsTxt.innerText = miliseconds;
 		}
 	}, 10);
