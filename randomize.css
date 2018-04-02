@@ -1,0 +1,113 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body, html{
+	height: 100%;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	font-family: sans-serif;
+	background-color: #ededed;
+	color: #5d5e60;
+	padding: 0 40px;
+}
+p{
+	font-size: 3em;
+	width: 100%;
+	text-align: center;
+}
+h1{
+	width: 100%;
+	text-align: center;
+	font-size: 12em;
+	font-weight: normal;
+}
+em{
+	font-style: normal;
+}
+button{
+	padding: 15px 30px;
+	border: #d9199d solid 1px;
+	font-size: 1.5em;
+	margin-top: 10px;
+	outline: none;
+	cursor: pointer;
+	color: #d9199d;
+}
+button:hover{
+	transform: scale(0.97);
+}
+.buttons-container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.question {
+	font-size: 2em;
+	background-color: #C92240;
+	color: #fff;
+	padding: 10px;
+	margin: 20px 0;
+}
+.overlay{
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0, 0.5);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+.counter{
+	color: #FFFFFF;
+	font-size: 1.6em;
+	position: relative;
+	border-radius: 8px;
+	padding: 30px 120px;
+	background-color: #f22c08;
+	box-shadow: 0 0 20px #ffffff;
+	animation: iluminate 1s infinite alternate;
+}
+.counter em {
+	display: inline-block;
+	width: 35px;
+	text-align: center;
+}
+#close {
+	padding: 0;
+	top: -10px;
+	width: 30px;
+	right: -10px;
+	height: 30px;
+	color: #f00;
+	border: none;
+	margin-top: 0;
+	font-size: 14px;
+	border-radius: 50%;
+	position: absolute;
+	background-color: #fff;
+}
+#btn-Q, #btn-T {
+	display: none;
+}
+@keyframes iluminate {
+	from{
+		background-color: #f22c08;
+		transform: scale(1);
+	}
+	to{
+		background-color: #ba2106;
+		transform: scale(1.3);
+	}
+}
