@@ -21,7 +21,7 @@ const questions = [
 	'¿Qué funciones usamos para operar con JSON?',
 	'Si quisieramos redireccionar a otro archivo / página ¿qué tenemos que hacer? (Pizarrón)',
 	'Cómo hacemos para operar dentro de una función con una variable global'
-]
+];
 
 const btnP = document.querySelector('#btn-P');
 const btnQ = document.querySelector('#btn-Q');
@@ -34,7 +34,7 @@ const random = () => {
 	btnP.style.display = 'none';
 	btnQ.style.display = 'block';
 
-	if (students.length > 0) {					
+	if (students.length > 0) {
 		let words1 = ['elegid@', 'afortunad@', 'bendecid@', 'iluminad@', 'ganador@'];
 		let words2 = ['sacrificad@', 'damnificad@', 'inmolad@', 'perjudicad@', 'afectad@'];
 		let n = Math.floor(Math.random() * students.length);
@@ -51,7 +51,7 @@ const random = () => {
 		document.querySelector('#txt').innerHTML = '';
 		document.querySelector('.buttons-container').style.display = 'none';
 	}
-}
+};
 
 btnP.addEventListener('click', random);
 
@@ -61,7 +61,7 @@ const question = () => {
 	questions.splice(n, 1);
 	btnQ.style.display = 'none';
 	btnT.style.display = 'block';
-}
+};
 
 btnQ.addEventListener('click', question);
 
@@ -74,7 +74,7 @@ const counter = () => {
 	document.querySelector('.seconds').innerText = seconds;
 	miliSecondsTxt.innerText = miliseconds;
 
-	const sec = setInterval( () => {
+	const sec = setInterval(() => {
 		if (seconds <= 30 && seconds > 0) {
 			--seconds;
 			document.querySelector('.counter span').innerText = seconds;
@@ -87,7 +87,7 @@ const counter = () => {
 		}
 	}, 1000);
 
-	const mili = setInterval( () => {
+	const mili = setInterval(() => {
 		if (miliseconds < 1) {
 			miliseconds = 99;
 			miliSecondsTxt.innerText = miliseconds;
@@ -111,16 +111,16 @@ const counter = () => {
 
 		let counterWrap = document.querySelector('.counter');
 
-		if (counterWrap.hasAttribute('style')){
+		if (counterWrap.hasAttribute('style')) {
 			counterWrap.removeAttribute('style');
 		}
 
 		btnT.style.display = 'none';
 		btnP.style.display = 'block';
-	}
+	};
 
 	const btnClose = document.querySelector('#close');
 	btnClose.addEventListener('click', close);
-}
+};
 
 btnT.addEventListener('click', counter);
