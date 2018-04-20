@@ -1,28 +1,3 @@
-const students = ['Sofi', 'Eve', 'Shei', 'Pau', 'Sari', 'Vanesa', 'Dana', 'Gise', 'Rodri', 'Pato', 'Lucho', 'Leandro', 'Nico', 'Lean G.', 'Fede', 'Meli', 'Tomás', 'Leo', 'Maxi', 'Gaby'];
-
-const questions = [
-	'¿En qué lugar se ejecuta el código PHP?',
-	'¿Cuáles son la marcas para la inserción de código PHP en páginas HTML? (Pizarrón)',
-	'¿Cómo se puede iniciar un array en PHP de forma correcta? (Pizarrón)',
-	'¿Cómo se declara una variable tipo integer de forma correcta? (Pizarrón)',
-	'¿Cuáles son operadores de comparación?',
-	'¿Cómo se puede concatenar dos strings en PHP?',
-	'¿Cuál es la sintaxis correcta de un IF? (Pizarrón)',
-	'¿Estructura de control más comun para repetir un bloque de código un número determinado de veces?',
-	'¿Cúal es la manera correcta de escribir un if ternario? (Pizarrón)',
-	'¿Qué problema tiene la expresión "<?= $algo ?>"?',
-	'¿Cuál es la diferencia entre "include" y "require"?',
-	'Al enviar algo por $_POST ¿Cuál es la restricción de longitud del query string?',
-	'¿Cómo se obtiene la información de un formulario que ha sido enviado mediante el método GET? (Pizarrón)',
-	'¿Cómo se encripta una contraseña?',
-	'¿Dónde se guarda la información de la $_SESSION?',
-	'¿Para qué se usa una $_COOKIE?',
-	'¿Cual función se emplea para abrir / escribir / cerrar un archivo de texto?',
-	'¿Qué funciones usamos para operar con JSON?',
-	'Si quisieramos redireccionar a otro archivo / página ¿qué tenemos que hacer? (Pizarrón)',
-	'Cómo hacemos para operar dentro de una función con una variable global'
-];
-
 const btnP = document.querySelector('#btn-P');
 const btnQ = document.querySelector('#btn-Q');
 const btnT = document.querySelector('#btn-T');
